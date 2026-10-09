@@ -1,0 +1,187 @@
+/* Reset basics */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* black background */
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Header */
+.header-bar {
+  background: linear-gradient(90deg, purple, blue, black);
+  padding: 15px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.header-bar h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+/* Horizontal navigation */
+.horizontal-nav {
+  list-style: none;
+  margin: 15px 0 0 0;
+  padding: 0;
+  display: flex;              /* side by side */
+  justify-content: center;    /* center across top */
+  gap: 20px;
+}
+
+.horizontal-nav li {
+  background: linear-gradient(90deg, purple, blue, black);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.horizontal-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.horizontal-nav a:hover {
+  background: #ffd700; /* gold hover */
+  color: #000;
+  border-radius: 5px;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(to right, #4b0082, #000000); /* purple to black */
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h2 {
+  color: #87cefa; /* light blue */
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #e0e0e0;
+  font-size: 18px;
+}
+
+.hero .btn {
+  display: inline-block;
+  background: linear-gradient(to right, #4b0082, #00008b);
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hero .btn:hover {
+  background: #ffd700;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Welcome section */
+.welcome {
+  padding: 40px;
+  text-align: center;
+}
+
+.welcome h2 {
+  color: #87cefa;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.welcome p {
+  max-width: 600px;   /* keep text narrow for readability */
+  margin: 0 auto 20px auto;
+  font-size: 18px;
+  color: #e0e0e0;
+}
+
+/* ID card image */
+.id-card img {
+  max-width: 250px;   /* limit size on desktop */
+  width: 100%;        /* scale within container */
+  height: auto;       /* keep proportions */
+  border: 3px solid #4b0082;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(75,0,130,0.7);
+  margin-top: 20px;
+}
+
+/* Contact section */
+.contact {
+  background: #ffd700; /* gold highlight */
+  color: #000;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact .btn {
+  background: #000;
+  color: #ffd700;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact .btn:hover {
+  background: purple;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, purple, blue, black);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .horizontal-nav {
+    flex-direction: column;   /* stack links vertically on small screens */
+    align-items: center;
+  }
+
+  .hero {
+    padding: 30px 10px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .welcome {
+    padding: 20px;
+  }
+
+  .welcome h2 {
+    font-size: 22px;
+  }
+
+  .welcome p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .id-card img {
+    max-width: 90%;   /* shrink image for mobile */
+  }
+
+  .contact {
+    padding: 20px;
+  }
+}
