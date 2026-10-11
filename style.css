@@ -134,6 +134,18 @@ body {
   background: purple;
   color: #fff;
 }
+/* Resource Buttons */
+.resource-links a,
+.portfolio-button {
+  display: inline-block;
+  margin: 8px 6px;
+  padding: 10px 16px;
+  background-color: #0073e6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 
 /* Footer */
 footer {
