@@ -1,139 +1,72 @@
-body {
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #000; /* black background */
-  color: #e0e0e0;
-  line-height: 1.6;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Header */
+/* Body Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #1a1a1a, #2e004f, #003366);
+  color: #f0f0f0;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Bar */
 .header-bar {
-  background: linear-gradient(90deg, purple, blue, black);
-  padding: 15px 20px;
+  background: #2e004f;
   color: #fff;
+  padding: 20px;
   text-align: center;
+  border-bottom: 4px solid #0073e6;
 }
 
 .header-bar h1 {
-  margin: 0;
-  font-size: 26px;
-}
-
-/* Horizontal navigation */
-.horizontal-nav {
-  list-style: none;
-  margin: 15px 0 0 0;
-  padding: 0;
-  display: flex;              /* side by side */
-  justify-content: center;    /* center across top */
-  gap: 20px;
-}
-
-.horizontal-nav li {
-  background: linear-gradient(90deg, purple, blue, black);
-  padding: 10px 15px;
-  border-radius: 5px;
-}
-
-.horizontal-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.horizontal-nav a:hover {
-  background: #ffd700; /* gold hover */
-  color: #000;
-  border-radius: 5px;
-}
-
-/* Hero section */
-.hero {
-  background: linear-gradient(to right, #4b0082, #000000); /* purple to black */
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.hero h2 {
-  color: #87cefa; /* light blue */
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
-.hero p {
-  color: #e0e0e0;
-  font-size: 18px;
+/* Navigation */
+.horizontal-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.hero .btn {
-  display: inline-block;
-  background: linear-gradient(to right, #4b0082, #00008b);
-  color: white;
-  padding: 10px 20px;
-  margin-top: 15px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.hero .btn:hover {
-  background: #ffd700;
-  color: #000;
-  transform: scale(1.05);
-}
-
-/* Welcome section */
-.welcome {
-  padding: 40px;
-  text-align: center;
-}
-
-.welcome h2 {
-  color: #87cefa;
-  margin-bottom: 15px;
-  font-size: 28px;
-}
-
-.welcome p {
-  max-width: 600px;   /* keep text narrow for readability */
-  margin: 0 auto 20px auto;
-  font-size: 18px;
-  color: #e0e0e0;
-}
-
-/* ID card image */
-.id-card img {
-  max-width: 250px;   /* limit size on desktop */
-  width: 100%;        /* scale within container */
-  height: auto;       /* keep proportions */
-  border: 3px solid #4b0082;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(75,0,130,0.7);
-  margin-top: 20px;
-}
-
-/* Contact section */
-.contact {
-  background: #ffd700; /* gold highlight */
-  color: #000;
-  padding: 40px;
-  text-align: center;
-}
-
-.contact .btn {
-  background: #000;
-  color: #ffd700;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact .btn:hover {
-  background: purple;
+.horizontal-nav li a {
   color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
+
+.horizontal-nav li a:hover {
+  background-color: #0073e6;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.content h2 {
+  color: #66ccff;
+  margin-bottom: 10px;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
 /* Resource Buttons */
 .resource-links a,
 .portfolio-button {
@@ -146,14 +79,20 @@ body {
   border-radius: 6px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+}
 
-/* Footer */
-footer {
-  background: linear-gradient(90deg, purple, blue, black);
+.resource-links a:hover,
+.portfolio-button:hover {
+  background-color: #005bb5;
+}
+
+/* Gradient Footer */
+.footer-gradient {
+  background: linear-gradient(to right, #2e004f, #003366);
   color: #fff;
   text-align: center;
   padding: 15px;
-  margin-top: 30px;
+  border-top: 4px solid #0073e6;
 }
 
 /* Mobile responsiveness */
